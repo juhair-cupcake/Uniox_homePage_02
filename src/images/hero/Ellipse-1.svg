@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 1032" width="1420" height="1032">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f4f3ff;stroke: #e7e7e7 } 
+	</style>
+	<g id="Banner">
+		<g id="BG">
+			<path id="Ellipse 9 copy 4" class="shp0" d="M603.7 23.34C991.32 -60.3 1353.14 92.47 1411.85 364.56C1470.56 636.65 1203.92 925.02 816.3 1008.66C428.68 1092.3 66.86 939.53 8.15 667.44C-50.56 395.35 216.08 106.98 603.7 23.34Z" />
+		</g>
+	</g>
+</svg>

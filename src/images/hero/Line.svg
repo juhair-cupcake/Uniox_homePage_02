@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1148 756" width="1148" height="756">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="574" y1="755.999" x2="574" y2="-0.001">
+			<stop offset="0" stop-color="#ffffff"  />
+			<stop offset="0.475" stop-color="#ffc600"  />
+			<stop offset="1" stop-color="#ffffff"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: url(#grd1);stroke-width: 5 } 
+	</style>
+	<g id="Banner">
+		<g id="BG">
+			<path id="Line" class="shp0" d="M0 756C87.91 588.38 206.25 433.65 314.96 530.11C520.92 712.85 550.04 574.92 572.92 503.94C595.81 432.97 649.96 240.87 916.67 217.35C1085.75 202.43 1134.78 84.44 1148 0" />
+		</g>
+	</g>
+</svg>
