@@ -69,7 +69,7 @@
         border-left: 20px solid transparent;
         z-index: 1;
       }
-      &-1 {
+      &:nth-child(3n-1) {
         a {
           color: $accent-color;
         }
@@ -80,7 +80,7 @@
           border-top: 5px solid $accent-color;
         }
       }
-      &-2 {
+      &:nth-child(3n-2) {
         a {
           color: $secondary-color;
         }
@@ -91,7 +91,7 @@
           border-top: 5px solid $secondary-color;
         }
       }
-      &-3 {
+      &:nth-child(3n-3) {
         a {
           color: $primary-color;
         }
