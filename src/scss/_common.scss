@@ -1,12 +1,14 @@
-// html{
-//   scroll-behavior: smooth;
-// }
-
 body {
   background: $body-color;
+  margin: 0;
+  padding: 0;
 }
 
-.section{
+.section {
   padding: 100px 0;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}

@@ -1,19 +1,16 @@
 .hero {
-  padding: 200px 0;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @include desktop {
-    padding: 150px 0 30px 0;
-  }
+  z-index: 1;
+  overflow: hidden;
 
+  //Background Part
   &-bg {
     &-1 {
       position: absolute;
       width: 80vw;
       top: -30vw;
       left: -35vw;
+      z-index: -1;
       img {
         width: 100%;
       }
@@ -23,8 +20,112 @@
       width: 80vw;
       top: -25vw;
       left: -35vw;
+      z-index: -1;
       img {
         width: 100%;
+      }
+    }
+  }
+
+  //change the button List
+  ul {
+    list-style: none;
+    padding: 0px;
+    li {
+      display: inline-block;
+    }
+  }
+
+  //Main Container Part
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &-content {
+    width: 40%;
+    .date {
+      color: #ffc600;
+    }
+    h1 {
+      font-size: 50px;
+      span {
+        color: $accent-color;
+        text-decoration: underline;
+      }
+      margin: 20px 0px;
+    }
+  }
+  &-image {
+    position: relative;
+    width: 60%;
+    img {
+      width: 100%;
+      margin-left: -150px;
+      margin-top: 100px;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      left: 15%;
+      top: 30%;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background-color: $accent-color;
+      z-index: -2;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 1128px;
+      height: 736px;
+      top: 10%;
+      left: -30%;
+      background-image: url("../images/hero/Line.svg");
+      z-index: -1;
+    }
+    .text-box {
+      position: absolute;
+      max-width: 220px;
+      padding: 60px 0;
+      top: 25%;
+      right: -5%;
+      border-radius: 20%;
+      background-color: $secondary-color;
+      z-index: 1;
+      text-align: center;
+      font-size: 18px;
+      color: $text-color-white;
+      overflow: hidden;
+      h4 {
+        font-size: 40px;
+        margin: 0px;
+      }
+      p {
+        margin: 0px;
+        font-weight: bold;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 237px;
+        height: 237px;
+        left: -20%;
+        top: -95%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.14901960784313725);
+        z-index: 1;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        width: 217px;
+        height: 217px;
+        bottom: -85%;
+        left: 25%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.14901960784313725);
+        z-index: 1;
       }
     }
   }

@@ -1,0 +1,26 @@
+.btn {
+  text-decoration: none;
+  padding: 20px 35px;
+  min-width: 90px;
+  border-radius: 35px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+  transition: 0.4s ease;
+  &-primary {
+    background-color: $primary-color;
+    color: $text-color-white;
+    &:hover {
+      box-shadow: 0px 20px 25px rgba(238, 109, 121, 0.2);
+    }
+  }
+  &-white {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    &:hover {
+      box-shadow: 0px 20px 25px rgba(68, 66, 66, 0.2);
+    }
+  }
+}
