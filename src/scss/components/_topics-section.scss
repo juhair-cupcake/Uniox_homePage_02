@@ -1,0 +1,107 @@
+.topics {
+  background-color: #f5f7f7;
+  padding: 100px 0px 100px;
+  &-title {
+    text-align: center;
+    margin: auto;
+    h4 {
+      position: relative;
+      font-size: 18px;
+      z-index: 1;
+      color: $text-color-3;
+      &:before {
+        position: absolute;
+        content: "TOPICS";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 200%;
+        font-size: 70px;
+        color: #2126391a;
+        font-weight: 700;
+        z-index: -1;
+      }
+    }
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    .card {
+      position: relative;
+      background-color: white;
+      border-top: 5px solid white;
+      padding: 25px 30px 30px;
+      border-radius: 10px;
+      transition: 0.4s ease;
+      h3 {
+        color: $text-color;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+      }
+      p {
+        color: #848484;
+        width: 287px;
+        height: 72px;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-bottom: 40px;
+      }
+      a {
+        font-size: 15px;
+        line-height: 50px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        z-index: 1;
+      }
+      &-1 {
+        a {
+          color: $accent-color;
+        }
+        &::after {
+          border-bottom: 20px solid $accent-color;
+        }
+        &:hover {
+          border-top: 5px solid $accent-color;
+        }
+      }
+      &-2 {
+        a {
+          color: $secondary-color;
+        }
+        &::after {
+          border-bottom: 20px solid $secondary-color;
+        }
+        &:hover {
+          border-top: 5px solid $secondary-color;
+        }
+      }
+      &-3 {
+        a {
+          color: $primary-color;
+        }
+        &::after {
+          border-bottom: 20px solid $primary-color;
+        }
+        &:hover {
+          border-top: 5px solid $primary-color;
+        }
+      }
+    }
+  }
+}
