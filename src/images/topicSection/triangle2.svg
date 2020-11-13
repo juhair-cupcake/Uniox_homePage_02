@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #1edac6 } 
+	</style>
+	<g id="Topics">
+		<g id="2">
+			<path id="Rectangle 751 copy" class="shp0" d="M0 20L15 20C17.76 20 20 17.76 20 15L20 0L0 20Z" />
+		</g>
+	</g>
+</svg>

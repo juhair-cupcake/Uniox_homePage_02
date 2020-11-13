@@ -67,9 +67,8 @@
         position: absolute;
         right: 15px;
         bottom: 15px;
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
+        width: 20px;
+        height: 20px;
         z-index: 1;
       }
       &:nth-child(3n-1) {
@@ -77,7 +76,7 @@
           color: $accent-color;
         }
         &::after {
-          border-bottom: 20px solid $accent-color;
+          background-image: url("../images/topicSection/triangle1.svg");
         }
         &:hover {
           border-top: 5px solid $accent-color;
@@ -88,7 +87,7 @@
           color: $secondary-color;
         }
         &::after {
-          border-bottom: 20px solid $secondary-color;
+          background-image: url("../images/topicSection/triangle2.svg");
         }
         &:hover {
           border-top: 5px solid $secondary-color;
@@ -99,7 +98,7 @@
           color: $primary-color;
         }
         &::after {
-          border-bottom: 20px solid $primary-color;
+          background-image: url("../images/topicSection/triangle3.svg");
         }
         &:hover {
           border-top: 5px solid $primary-color;
