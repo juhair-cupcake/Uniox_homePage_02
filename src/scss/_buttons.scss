@@ -24,5 +24,11 @@
       box-shadow: 0px 20px 25px rgba(68, 66, 66, 0.2);
       border: 2px solid white;
     }
+    &.active {
+      background-color: $secondary-color;
+      color: $text-color-white;
+      box-shadow: 0px 12px 19.5px rgba(30, 218, 198, 0.21);
+      border: 2px solid $secondary-color;
+    }
   }
 }
