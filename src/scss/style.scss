@@ -5,6 +5,8 @@ PROJECT:	Uniox_homePage_02
 VERSION:	1.0.0
 -------------------------------------------------------------------*/
 
+@import "./plugins/fontAwsome";
+
 @import "variables";
 
 @import "typography";
@@ -20,3 +22,5 @@ VERSION:	1.0.0
 @import "components/topics-section";
 
 @import "components/about-section";
+
+@import "components/speaker-section";

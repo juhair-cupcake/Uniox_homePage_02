@@ -1,0 +1,107 @@
+.speakerSection {
+  background-color: #f5f7f7;
+  padding: 150px 0 150px;
+  &-title {
+    display: flex;
+    justify-content: center;
+    &-text {
+      flex: 1;
+    }
+  }
+  &-wrapper {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 25% 25% 25% 25%;
+    .team {
+      width: 270px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 20px 25px rgba(8, 13, 62, 0.1);
+      &-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+        img {
+          margin-bottom: -5px;
+        }
+        .social {
+          position: absolute;
+          width: 100%;
+          background-color: #1edac6;
+          bottom: -120px;
+          transition: 0.3s ease;
+          ul {
+            li {
+              list-style: none;
+              display: inline-block;
+              margin: 0 5px 0;
+              border-radius: 50%;
+              background-color: rgba(255, 255, 255, 0.25098039215686274);
+              a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                width: 56px;
+                height: 56px;
+                i {
+                  line-height: 56px;
+                  font-size: 18px;
+                  color: #ffffff;
+                  text-align: center;
+                }
+              }
+              &:hover {
+                background-color: white;
+                i {
+                  color: #1edac6;
+                }
+              }
+            }
+          }
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background-color: #262562;
+          top: 0;
+          left: 0;
+          transition: 0.4s ease;
+        }
+      }
+      &-content {
+        z-index: 2;
+        padding: 30px 30px 10px;
+        h4 {
+          font-size: 22px;
+          line-height: 36px;
+          font-weight: 700;
+        }
+        span {
+          font-size: 15px;
+          line-height: 36px;
+          color: #848484;
+          font-weight: 400;
+        }
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          color: #848484;
+          font-weight: 400;
+        }
+      }
+      &:hover {
+        .team-image {
+          .social {
+            bottom: 0px;
+          }
+          &::before {
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+  }
+}
