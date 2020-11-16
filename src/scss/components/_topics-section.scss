@@ -9,7 +9,7 @@
   &-wrapper {
     display: grid;
     grid-column-gap: 30px;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 31.33% 31.33% 31.33%;
     .card {
       position: relative;
       background-color: white;
@@ -25,7 +25,7 @@
         font-weight: 700;
       }
       p {
-        color: #848484;
+        color: $gray;
         width: 287px;
         height: 72px;
         font-size: 16px;
@@ -48,34 +48,34 @@
         height: 20px;
         z-index: 1;
       }
-      &:nth-child(3n-1) {
+      &:nth-child(3n-2) {
         a {
           color: $accent-color;
         }
         &::after {
-          background-image: url("../images/topicSection/triangle1.svg");
+          background-image: url("../images/card/triangle1.svg");
         }
         &:hover {
           border-top: 5px solid $accent-color;
         }
       }
-      &:nth-child(3n-2) {
+      &:nth-child(3n-1) {
         a {
           color: $secondary-color;
         }
         &::after {
-          background-image: url("../images/topicSection/triangle2.svg");
+          background-image: url("../images/card/triangle2.svg");
         }
         &:hover {
           border-top: 5px solid $secondary-color;
         }
       }
-      &:nth-child(3n-3) {
+      &:nth-child(3n) {
         a {
           color: $primary-color;
         }
         &::after {
-          background-image: url("../images/topicSection/triangle3.svg");
+          background-image: url("../images/card/triangle3.svg");
         }
         &:hover {
           border-top: 5px solid $primary-color;

@@ -11,9 +11,8 @@
   &-wrapper {
     display: grid;
     grid-column-gap: 30px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 23% 23% 23% 23%;
     .team {
-      width: 270px;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0px 20px 25px rgba(8, 13, 62, 0.1);
@@ -23,6 +22,7 @@
         border-radius: 10px 10px 0 0;
         img {
           margin-bottom: -5px;
+          width: 100%;
         }
         .social {
           position: absolute;
@@ -82,13 +82,13 @@
         span {
           font-size: 15px;
           line-height: 36px;
-          color: #848484;
+          color: $gray;
           font-weight: 400;
         }
         p {
           font-size: 16px;
           line-height: 30px;
-          color: #848484;
+          color: $gray;
           font-weight: 400;
         }
       }
