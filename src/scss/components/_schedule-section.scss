@@ -32,13 +32,16 @@
         border-bottom: 1px solid #e8ebea;
         transition: 0.4s ease;
         overflow: hidden;
+        animation: fadeEffect 0.4s; /* Fading animation */
         &-time {
+          width: 8%;
           font-size: 24px;
           line-height: 36px;
           color: #1edac6;
           font-weight: 700;
         }
         &-person {
+          width: 12%;
           padding: 40px;
           img {
             border-radius: 50%;
@@ -137,5 +140,13 @@
         }
       }
     }
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
   }
 }
