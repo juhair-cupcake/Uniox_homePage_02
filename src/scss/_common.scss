@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
 }
 
-.section-title-right {
+.section-title-left {
   position: relative;
   font-size: 18px;
   line-height: 50px;
@@ -54,4 +54,13 @@ body {
   line-height: 60px;
   font-weight: 700;
   margin-bottom: 70px;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
