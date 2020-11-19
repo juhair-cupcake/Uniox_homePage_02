@@ -5,6 +5,7 @@
   min-width: 90px;
   border-radius: 35px;
   display: inline-block;
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 500;
   margin: 0 10px 0 0;
@@ -30,5 +31,10 @@
       box-shadow: 0px 12px 19.5px rgba(30, 218, 198, 0.21);
       border: 2px solid $secondary-color;
     }
+  }
+  &-sm {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
   }
 }

@@ -7,6 +7,10 @@ VERSION:	1.0.0
 
 @import "./plugins/fontAwsome";
 
+@import "./plugins/slick";
+
+@import "./plugins/slick-theme";
+
 @import "variables";
 
 @import "typography";
@@ -28,6 +32,8 @@ VERSION:	1.0.0
 @import "components/schedule-section";
 
 @import "components/sponsors-section";
+
+@import "components/testimonial-section";
 
 @import "components/price-section";
 

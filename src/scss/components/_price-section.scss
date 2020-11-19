@@ -17,45 +17,8 @@
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     grid-template-columns: 50% 50%;
-    &-item {
-      padding: 50px;
-      background-color: $white;
-      border-radius: 10px;
-      box-shadow: 0px 20px 25px rgba(8, 13, 62, 0.1);
-      &-price {
-        font-size: 30px;
-        line-height: 30px;
-        font-weight: 500;
-        margin-bottom: 30px;
-      }
-
-      &-name {
-        font-size: 22px;
-        line-height: 32px;
-        font-weight: 500;
-      }
-      ul {
-        padding: 0;
-        li {
-          list-style: none;
-          margin: 0;
-          font-size: 16px;
-          line-height: 43px;
-          color: $gray;
-          font-weight: 400;
-          position: relative;
-          padding-left: 25px;
-          &::before {
-            position: absolute;
-            content: "";
-            width: 16px;
-            height: 12px;
-            top: 40%;
-            left: 0px;
-            background-image: url("../images/priceSection/check.svg");
-          }
-        }
-      }
+    .item-wrap {
+      filter: drop-shadow(0px 20px 25px rgba(8, 13, 62, 0.1));
       &:nth-child(4n-3) {
         .priceSection-package-item-price {
           color: $text-color-1;
@@ -128,6 +91,50 @@
           }
         }
       }
+    }
+    &-item {
+      padding: 50px;
+      background-color: $white;
+      border-radius: 10px;
+      -webkit-mask-image: url("../images/priceSection/mask.svg");
+      -webkit-mask-size: cover;
+      -webkit-mask-position: bottom center;
+      -webkit-mask-repeat: no-repeat;
+      &-price {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      &-name {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 500;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          margin: 0;
+          font-size: 16px;
+          line-height: 43px;
+          color: $gray;
+          font-weight: 400;
+          position: relative;
+          padding-left: 25px;
+          &::before {
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 12px;
+            top: 40%;
+            left: 0px;
+            background-image: url("../images/priceSection/check.svg");
+          }
+        }
+      }
+
       &:hover {
         .btn-white {
           background-color: $accent-color;

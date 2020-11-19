@@ -1,0 +1,16 @@
+.testimonialSection {
+  padding: 150px 0px;
+  &-title {
+    h2 {
+      text-align: center;
+    }
+  }
+  &-quote {
+    display: flex;
+    &-item {
+      width: 40%;
+      border-radius: 10px;
+      box-shadow: 0px 20px 25px rgba(8, 13, 62, 0.1);
+    }
+  }
+}
