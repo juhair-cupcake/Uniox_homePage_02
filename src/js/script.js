@@ -36,6 +36,15 @@ function showSponsors(evt, name) {
   evt.currentTarget.className += " active";
 }
 
+//Slider
+$(".testimonialSection-quote").slick({
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+});
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen1").click();
 document.getElementById("defaultOpen2").click();

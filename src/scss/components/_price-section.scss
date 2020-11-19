@@ -16,7 +16,7 @@
     display: grid;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     .item-wrap {
       filter: drop-shadow(0px 20px 25px rgba(8, 13, 62, 0.1));
       &:nth-child(4n-3) {
@@ -108,7 +108,7 @@
       }
 
       &-name {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 32px;
         font-weight: 500;
       }
