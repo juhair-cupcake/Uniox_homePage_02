@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 26" width="8" height="26">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.149;fill: #ffffff } 
+	</style>
+	<g id="Counter">
+		<g id="Counter">
+			<path id="Ellipse 766 copy" class="shp0" d="M4 0C6.21 0 8 1.79 8 4C8 6.21 6.21 7.99 4 7.99C1.79 7.99 0 6.21 0 4C0 1.79 1.79 0 4 0ZM4 18C6.21 18 8 19.79 8 22C8 24.21 6.21 26 4 26C1.79 26 0 24.21 0 22C0 19.79 1.79 18 4 18Z" />
+		</g>
+	</g>
+</svg>

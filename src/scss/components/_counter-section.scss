@@ -1,0 +1,58 @@
+.counterSection {
+  background-color: $accent-color;
+  padding: 70px 0px;
+  &-wrapper {
+    display: flex;
+  }
+  &-title {
+    width: 30%;
+    padding-right: 10%;
+    font-size: 34px;
+    line-height: 48px;
+    color: $text-color-white;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 80px;
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.10196078431372549);
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0px;
+    }
+  }
+  &-clock {
+    width: 60%;
+    position: relative;
+  }
+  &-time {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    display: flex;
+    align-items: center;
+    img {
+      margin: 0px 40px;
+    }
+    &-item {
+      text-align: center;
+      &-number {
+        font-size: 50px;
+        line-height: 26px;
+        font-weight: 500;
+        margin: 20px 0px;
+        color: $text-color-white;
+      }
+      &-word {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 500;
+        color: $text-color-3;
+      }
+    }
+  }
+}
