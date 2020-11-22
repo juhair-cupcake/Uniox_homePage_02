@@ -1,0 +1,70 @@
+.locationSection {
+  padding: 150px 0px;
+  &-top {
+    display: flex;
+    &-title {
+      width: 30%;
+    }
+    &-button {
+      width: 70%;
+      position: relative;
+      &-wrap {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &-map {
+    display: flex;
+    &-content {
+      width: 49%;
+      margin-right: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 20px 25px rgba(8, 13, 62, 0.1);
+      padding: 50px 40px;
+      &-image {
+        position: relative;
+        &::after {
+          z-index: -1;
+          position: absolute;
+          content: "";
+          width: 70px;
+          height: 70px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 20px;
+          border-radius: 50%;
+          background-color: #f7f2fa;
+        }
+      }
+      &-text {
+        font-size: 24px;
+        line-height: 32px;
+        color: #212639;
+        font-weight: 500;
+        margin: 20px 0px 30px;
+      }
+      &-address {
+        font-size: 16px;
+        color: $gray;
+        font-family: "Roboto";
+        span {
+          margin-right: 20px;
+          color: $text-color;
+          font-weight: 500;
+          line-height: 30px;
+        }
+      }
+    }
+    &-api {
+      width: 48%;
+      margin-left: 10px;
+      border-radius: 10px;
+      background-color: $accent-color;
+    }
+  }
+}
