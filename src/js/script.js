@@ -52,22 +52,20 @@ let timeString = timeId.getAttribute("data-count");
 let fixedDate = new Date(timeString).getTime();
 function secondUpdate() {
   let nowDate = new Date().getTime();
-  var distance = fixedDate - nowDate;
+  let distance = fixedDate - nowDate;
 
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
   document.getElementById("Days").innerHTML = days;
 
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   document.getElementById("Hours").innerHTML = hours;
 
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   document.getElementById("Minutes").innerHTML = minutes;
 
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
   document.getElementById("Seconds").innerHTML = seconds;
-
-  console.log("lol");
 }
 
 // Get the element with id="defaultOpen" and click on it
