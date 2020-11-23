@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3480 1315" width="3480" height="1315">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3c377a } 
+	</style>
+	<g id="Footer">
+		<g id="BG">
+			<path id="Ellipse 913" class="shp0" d="M1740 0C2700.98 0 3480 294.37 3480 657.5C3480 1020.63 2700.98 1315 1740 1315C779.02 1315 0 1020.63 0 657.5C0 294.37 779.02 0 1740 0Z" />
+		</g>
+	</g>
+</svg>
